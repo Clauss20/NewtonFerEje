@@ -8,7 +8,11 @@ const Constraint = Matter.Constraint;
 var bobObject1,bobObject2,bobObject3, bobObject4,bobObject5, roofObject
 var rope1,rope2,rope3, rope4,rope5;
 var world;
+var fondo;
 
+function preload(){
+	fondo = loadImage("fondo.jpg");
+}
 
 function setup() {
 	createCanvas(800, 600);
@@ -35,7 +39,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(230);
+  background(fondo);
   roofObject.display();
 
   rope1.display();
